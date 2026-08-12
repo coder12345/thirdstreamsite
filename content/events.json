@@ -5,7 +5,8 @@
       "time": "7:00PM",
       "title": "Sample Upcoming Show (replace via /admin)",
       "venue": "Your Venue Here",
-      "link": ""
+      "link": "",
+      "image": "/content/uploads/meta_eyjzcmncdwnrzxqioijiemdszmlszxmifq-.png"
     },
     {
       "date": "2025-06-07",
