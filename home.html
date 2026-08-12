@@ -656,7 +656,7 @@
       var timeStr = e.time ? ' @ ' + escapeHtml(e.time) : '';
       var imgHtml = e.image ? '<div class="event-image"><img src="' + escapeHtml(e.image) + '" alt="' + escapeHtml(e.title) + '" style="max-width:fit-content;border-radius:4px;" /></div>' : '';
       return '' +
-        '<div class="event-detail" style="display: flex; flex-direction: row;">'
+        '<div class="event-detail" style="display: flex; flex-direction: row;">' +
         imgHtml +
         '  <div class="event-description">' +
         '    <div class="event-info-wrapper">' +
