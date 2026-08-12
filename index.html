@@ -654,7 +654,7 @@
     listEl.innerHTML = upcoming.map(function(e) {
       var dateStr = e.dateObj.toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
       var timeStr = e.time ? ' @ ' + escapeHtml(e.time) : '';
-      var imgHtml = e.image ? '<div class="event-image"><img src="' + escapeHtml(e.image) + '" alt="' + escapeHtml(e.title) + '" style="max-width:100%;border-radius:4px;" /></div>' : '';
+      var imgHtml = e.image ? '<div class="event-image"><img src="' + escapeHtml(e.image) + '" alt="' + escapeHtml(e.title) + '" style="max-width:fit-content;border-radius:4px;" /></div>' : '';
       return '' +
         '<div class="event-detail" style="display: flex; flex-direction: row;">' +
         imgHtml +
