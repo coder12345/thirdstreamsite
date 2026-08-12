@@ -1,0 +1,38 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "content/uploads"
+public_folder: "/content/uploads"
+
+collections:
+  - name: "events"
+    label: "Upcoming Events"
+    files:
+      - file: "content/events.json"
+        label: "Events List"
+        name: "events"
+        fields:
+          - { label: "Events", name: "events", widget: "list", fields: [
+                { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false },
+                { label: "Time", name: "time", widget: "string", required: false, hint: "e.g. 8:00PM" },
+                { label: "Title", name: "title", widget: "string" },
+                { label: "Venue", name: "venue", widget: "string", required: false },
+                { label: "Link", name: "link", widget: "string", required: false },
+                { label: "Description", name: "description", widget: "text", required: false, hint: "Optional. A few sentences about the show. Displays in italics." },
+                { label: "Poster / flyer image", name: "image", widget: "image", required: false, hint: "Optional. Upload a poster or event photo." }
+              ]
+            }
+
+  - name: "gallery"
+    label: "Photo Gallery"
+    files:
+      - file: "content/photos.json"
+        label: "Photos"
+        name: "photos"
+        fields:
+          - { label: "Photos", name: "photos", widget: "list", fields: [
+                { label: "Image", name: "image", widget: "image", hint: "Upload a photo for the gallery." },
+                { label: "Caption / alt text", name: "caption", widget: "string", required: false }
+              ]
+            }
