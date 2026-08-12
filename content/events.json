@@ -36,6 +36,14 @@
       "title": "Party on the Path",
       "venue": "Eclipse De Luna, 764 Miami Circle NE, Atlanta, GA 30324",
       "link": "https://livablebuckhead.com/pop"
+    },
+    {
+      "date": "2026-08-12",
+      "title": "Test Event 2",
+      "image": "/content/uploads/7200-my-adventures-with-superman-1-.png",
+      "venue": "Super",
+      "description": "man",
+      "time": "33:00 PM"
     }
   ]
 }
